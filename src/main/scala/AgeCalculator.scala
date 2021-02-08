@@ -15,4 +15,8 @@ object AgeCalculator extends App {
   println(s"$personName, you have $yearsToTarget years left until you will be 100")
   println(s"$personName you will be $targetYear old in year ${currentYear+yearsToTarget}")
 
+  val myname = readLine("What is your name friend")
+  val age = readLine (s"Helo there $myname what is your age?").toInt
+  println(s"you will be 100 years old in ${2021+100-age}")
+
 }
