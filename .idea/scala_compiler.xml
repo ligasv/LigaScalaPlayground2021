@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="scalaplayground2021" />
+    <profile name="sbt 1" modules="ScalaPlayground2021,scalaplayground2021" />
   </component>
 </project>
