@@ -24,7 +24,7 @@ object Sequences extends App {
   //so map is one of the ways we work with immutable data, we just transform to another data
   //one of the advantages of this approach is that it works also on parallel machines(meaning clusters of machines)
   val filteredSeq = mySeq.filter(el => el > 3)
-  println(filteredSeq)
+  println(s"filteredSeq $filteredSeq")
   mySeq.foreach(el => println(el+20)) //so this will just pring each element with 20 added
 
   //Scala is not big on mutating but we can do it
