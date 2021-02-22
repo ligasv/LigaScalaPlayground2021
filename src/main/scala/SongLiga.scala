@@ -1,14 +1,14 @@
-class Song(title:String, author:String, lyrics: Seq[String]) {
-  def sing(lyrics: Seq[String], maxLines: Int = -1): Unit = {
+class SongLiga(title:String, author:String, lyrics: Seq[String]) {
+  def sing(lyrics: Seq[String],maxLines:Int = -1): Unit = {
     val maxLength = lyrics.length
-    if (maxLines == -1) for (line <- 0 to maxLength) println(lyrics(line))
+    if(maxLines == -1) for (line <- 0 to maxLength) println(lyrics(line))
     else for (line <- 0 to maxLength) println(lyrics(line))
   }
-
   def yell(lyrics: Seq[String]): Unit = {
     for (line <- lyrics) println(line.toUpperCase)
   }
-}
+
+
 
   //TODO create a Song class which is constructed with 3 parameters
   //title
