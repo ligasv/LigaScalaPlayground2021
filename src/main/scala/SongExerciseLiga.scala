@@ -1,4 +1,4 @@
-object SongExercise extends App {
+object SongExerciseLiga extends App {
   //TODO create 2 song objects with authors, title and lyrics
   val Song1 = new Song("Smelly Cat", "Phoebe", Seq("smelly cat, smelly cat", "what are they feeding you"))
   val Song2 = new Song("Bumbuls", "Dievs", Seq("Dievs nosvieda bumbul zemē, bumbul zemē", "bumbuls negrib zemē augt"))
