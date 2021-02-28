@@ -1,6 +1,7 @@
 object RandomNums extends App {
   //TODO generate a sequence of 100 random 2 dice throws so and then calculate the average and print frequency of each throw
   val r = scala.util.Random
+  println(s"value r: $r")
   r.setSeed(555) //seed makes it so the pseudo random numbers are always the same sequence
   //if you do not specify seed, computer makes seed value from your mouse, keyboard, system time, etc
   //for really random numbers you need some Lava lamps, or radioactive decay, or star bursts etc
