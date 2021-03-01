@@ -18,7 +18,7 @@ object CookbookFilter extends App{
 
   val mutLinesMap = collection.mutable.Map.empty[Int,String]
   for (key <- 0 to maxIndex) mutLinesMap(key) = cookbook_lines(key)
-  val allLinesMap = mutLinesMap.toMap
+  val allLinesMap = mutLinesMap.toMap //create immutable map
 
   def onlyCaps(line: String) = if ((line.toUpperCase == line) && (line.length > 0)) true else false
 
