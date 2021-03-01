@@ -16,7 +16,7 @@ object TraitExercises extends App {
       val xPt1 = xInit2
       val xPt2 = xInit1
     }
-    var
+    //var
   }
 
 

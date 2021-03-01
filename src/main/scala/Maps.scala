@@ -35,6 +35,7 @@ object Maps extends App {
   val mySuperSeq = (for (((key,value), index) <- myMap.zipWithIndex ) yield (index, key, value)).toSeq //it is still a List
   println(mySuperSeq)
   val newMap = for ((key,value) <- myMap) yield (value.toString, key)
+  println("asdfasdf")
   println(newMap)
 
   val mutMap = collection.mutable.Map("one" -> 1, "two" -> 2, "three" -> 3)
