@@ -24,7 +24,7 @@ object Liga1922Poetry extends App {
 
   val noEmptyLines = removeEmptyLines(lines.slice(startLine,endLine))
 
-  noEmptyLines.foreach(println)
+  //noEmptyLines.foreach(println)
 
   def removeAuthorTitle (lines: Array[String]): Array[String] = {
     val textOnly = lines.filter(line => line.toUpperCase != line)
@@ -33,5 +33,5 @@ object Liga1922Poetry extends App {
 
   val poemTextOnly = removeAuthorTitle(noEmptyLines)
 
-  //poemTextOnly.foreach(println)
+  poemTextOnly.foreach(println)
 }
