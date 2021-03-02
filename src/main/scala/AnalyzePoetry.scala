@@ -41,11 +41,38 @@ object AnalyzePoetry extends App {
 
   val linesToProcess = lines.slice(166,334)
 
+
   //TODO save a list of poems for each author with page numbers preferably
   def getPoemTitles(lines: Array[String], authors: Array[String]): Map[String, Array[String]] = {
     //so lines will be incoming text lines which we want to process in this
     //FIXME
+
+    val maxLineIndex = lines.length-1
+    for (thisAuthor <-
+      for (lineNum <- 0 to maxLineIndex) {
+        if (_==lines(lineNum)) val authLine =
+    }
+    )
+
+/*
+   val mutTitlesMap = collection.mutable.Map.empty[String,Array[String]]
+    val maxLineIndex = lines.length-1
+    authors.foreach(author => {
+      for (lineNum <- 0 to maxLineIndex) {
+                  var poemNum = 0
+                  val mutThisAuthPoems = collection.mutable.Seq.empty[String]
+                  if (author == lines(lineNum)) {
+                    val mutThisAuthPoems(poemNum) = lines(lineNum+1)
+                    poemNum = poemNum + 1
+                   }
+       }
+    })
+  */
+
+
+      //mutTitlesMap.getOrElseUpdate("three", -1)
     //TODO actually get the real poem titles :)
+
     //so endswiths, split, some other string functions might help here
     Map("Valdis" -> Array("3 little pigs", "it was a rainy and dark day"), "Liga" -> Array("Sunny day", "Cloudy day"))
   }

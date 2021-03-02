@@ -5,6 +5,8 @@ object Sequences extends App {
 //  mySeq(3) = 333 can't change insdies of immutable sequence
   val myMutableSeq = mutable.Seq(1,2,6,4) //or use this when you need to adjust contents
   myMutableSeq(3) = 600
+  println("asdfasdfasdf")
+  println(myMutableSeq(1))
   //so the below two really should not be needed
   var mySeqThatCanChangedToSomethingElse = Seq(1,2,6,7)
   var mutableAndChangableToSomethingElse = mutable.Seq(1,4,6,7,9)
