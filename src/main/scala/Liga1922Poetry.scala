@@ -18,9 +18,20 @@ object Liga1922Poetry extends App {
 
   def removeEmptyLines (lines: Array[String]): Array[String] = {
     //    val subResult = lines.filter(_.length > 1) //for single comparison check
-    val authAndTitle = lines.filter(line => line.length > 1) //for more complicated checks
-    authAndTitle
+    val authTitleText = lines.filter(line => line.length > 1) //for more complicated checks
+    authTitleText
   }
 
+  val noEmptyLines = removeEmptyLines(lines.slice(startLine,endLine))
 
+  noEmptyLines.foreach(println)
+
+  def removeAuthorTitle (lines: Array[String]): Array[String] = {
+    val textOnly = lines.filter(line => line.toUpperCase != line)
+    textOnly
+  }
+
+  val poemTextOnly = removeAuthorTitle(noEmptyLines)
+
+  //poemTextOnly.foreach(println)
 }
